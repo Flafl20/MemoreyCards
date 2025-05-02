@@ -1,0 +1,85 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.cardContainers {
+  max-width: 700px;
+  min-height: 360px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.pokeCard {
+  border: rgb(21, 238, 39) solid 2px;
+  background-color: rgb(154, 219, 33);
+  border-radius: 10px;
+  width: 150px;
+  transition: all ease 500ms;
+}
+.pokeCard:hover {
+  border: yellow 2px solid;
+  box-shadow: 1px 1px 5px 1px yellow;
+  background-color: yellow;
+  color: black;
+}
+
+.score {
+  animation: colorChanging 1s linear infinite alternate forwards;
+  border-radius: 1rem;
+  max-width: 670px;
+}
+
+@keyframes colorChanging {
+  from {
+    background-color: rgb(154, 219, 33);
+  }
+
+  to {
+    background-color: yellow;
+  }
+}
+
+.title {
+  margin-right: 45px;
+  animation: roro 2s linear infinite alternate forwards;
+}
+
+@keyframes roro {
+  from {
+    color: crimson;
+  }
+
+  25% {
+    color: yellow;
+  }
+
+  50% {
+    color: blue;
+  }
+
+  75% {
+    color: violet;
+  }
+
+  to {
+    color: greenyellow;
+  }
+}
