@@ -27,6 +27,22 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 600px) {
+  .cardContainers {
+    justify-content: space-between;
+  }
+
+  .pokeCard:hover {
+    content: none;
+  }
+  .pokeCard:focus {
+    border: yellow 2px solid;
+    box-shadow: 1px 1px 5px 1px yellow;
+    background-color: yellow;
+    color: black;
+  }
+}
+
 .pokeCard {
   border: rgb(21, 238, 39) solid 2px;
   background-color: rgb(154, 219, 33);
@@ -58,7 +74,6 @@
 }
 
 .title {
-  margin-right: 45px;
   animation: roro 2s linear infinite alternate forwards;
 }
 
