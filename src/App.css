@@ -27,6 +27,12 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 600px) {
+  .cardContainers {
+    justify-content: space-between;
+  }
+}
+
 .pokeCard {
   border: rgb(21, 238, 39) solid 2px;
   background-color: rgb(154, 219, 33);
