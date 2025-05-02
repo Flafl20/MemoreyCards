@@ -31,6 +31,16 @@
   .cardContainers {
     justify-content: space-between;
   }
+
+  .pokeCard:hover {
+    content: none;
+  }
+  .pokeCard:focus {
+    border: yellow 2px solid;
+    box-shadow: 1px 1px 5px 1px yellow;
+    background-color: yellow;
+    color: black;
+  }
 }
 
 .pokeCard {
